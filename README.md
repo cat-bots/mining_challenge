@@ -16,6 +16,10 @@ This project analyzes issues shared by developers with ChatGPT to identify commo
 ## Issue Classification
 A Python function, `classify_issue_type(prompt)`, was developed to classify prompts based on keyword matching. The current categories and their keywords are:
 
+## K-Means Implementation
+
+A K-means clustering method was applied to categorize prompts into clusters, and the first prompt from each cluster was classified using classify_issue_type. 
+
 | **Category**              | **Keywords**                                                                                  |
 |---------------------------|----------------------------------------------------------------------------------------------|
 | **Bug**                   | bug, error, errors, issue, broken, failure, does not work, problem, problems                  |
@@ -39,8 +43,8 @@ The high count of `Uncategorized` prompts indicates potential for refinement. To
   - `json` for parsing JSON data
   - `matplotlib` for graphs
   - `googletrans` for translating prompts
+  - `scikit-learn` for clustering
 
 ## Next Steps
 1. Refine keyword sets and add new categories to improve classification accuracy.
 2. Perform trend analysis on classified data to identify developer pain points.
-3. Develop visualizations to present findings.
